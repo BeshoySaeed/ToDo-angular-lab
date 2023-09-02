@@ -1,0 +1,9 @@
+<app-input-field (newInputValue)="inputValue($event)"></app-input-field>
+
+<div class="container" *ngFor="let item of noteList">
+  <app-show
+    [itemComp]="item"
+    (removeFun)="removeChild($event)"
+    (editFun)="editButton($event)"
+  ></app-show>
+</div>

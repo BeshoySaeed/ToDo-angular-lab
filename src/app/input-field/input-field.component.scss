@@ -1,0 +1,44 @@
+section {
+  background-color: rgb(96, 171, 146);
+  box-sizing: border-box;
+  padding: 40px;
+
+  h1 {
+    font-weight: bold;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .submitted {
+      width: fit-content;
+      padding: 7px 15px;
+      border: 1px solid white;
+      border-radius: 20px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 20px 0;
+
+      &:hover {
+        background-color: orange;
+      }
+    }
+    label {
+      margin-bottom: 5px;
+    }
+    .input-field {
+      padding: 10px;
+      box-shadow: 0 0 2px black;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      font-weight: bold;
+      font-size: 18px;
+
+      &:focus {
+        border: 1px solid blue;
+      }
+    }
+  }
+}

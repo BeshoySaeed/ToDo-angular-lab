@@ -1,0 +1,35 @@
+.container {
+  padding: 5px;
+  box-shadow: 0 0 5px blue;
+  border: 1px solid white;
+  box-sizing: border-box;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .btns {
+    input {
+      padding: 10px 20px;
+      background-color: red;
+      border: 2px solid white;
+      color: white;
+      margin-right: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        background-color: rgb(115, 17, 17);
+      }
+    }
+  }
+}
+
+.lineThrow {
+  text-decoration: line-through;
+}

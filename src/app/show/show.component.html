@@ -1,0 +1,17 @@
+<div class="container">
+  <p #para [ngClass]="editCondition ? 'lineThrow' : 'none'">{{ itemComp }}</p>
+  <div class="btns">
+    <input
+      type="button"
+      [value]="ButtonEdit"
+      class="edit"
+      (click)="editBtn(itemComp)"
+    />
+    <input
+      type="button"
+      value="Remove"
+      class="remove"
+      (click)="removeFunction(itemComp)"
+    />
+  </div>
+</div>
